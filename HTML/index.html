@@ -9,70 +9,104 @@
         <title>My First Web Page</title>
     </head>
     <body>
-        <h1>My Goals for the Year</h1>
+        <header>
+            <h1>My Goals for the Year</h1>
+
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li>
+                        <a href="#dailySchedule">Daily Schedule</a>
+                    </li>
+                    <li>
+                        <a href="#Vacation">Planning a Vacation</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
         <hr>
+        
+        <main>
+            <article id="html">
+                <h2>I'm ready to learn HTML</h2>
+                
+                <section>
+                    <h3>HTML5</h3>    
+                    <img src="img/png-transparent-logo-html-html5.png" alt="HTML Logo" title="This is a Title" width="300" height="300" loading="lazy">
 
-        <nav>
-            <ul>
+                    <figure>
+                        <figcaption>This is an HTML code:</figcaption>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    </figure>
+                </section>
+
+                <p>This is My First Web Page</p>
+                
+                <section>
+                    <h3>Daily Schedule</h3>
+                    <p>Let me tell you how:</p> 
+                    <ol> 
+                        <li>...I learn more about web dev.
+                        <li>...I plan out my schedule.
+                        <li>...I use resources from <a href="https://developer.mozilla.org"><abbr title="Mozilla Developer Network">MDN</abbr>.</a>
+                    </ol>
+                    <aside>
+                        <details>
+                            <summary>How many <mark>hours a Day</mark> do i code daily?</summary>
+                            <p>I code for about <time datetime="PT3H">3 hours</time> daily in the morning from <time datetime="08:00">8am</time>.</p>
+                        </details>
+                    </aside>
+                </section>
+            </article>
+
+            <hr>
+
+            <article id="Vacation">
+                <h2>I am also planning a Vacation</h2>
+
+                <img src="img/vacation-final.png" alt="This is a pic of Vacation" title="Jaake or kuch e krle" width="600" height="258" loading="lazy">
+
+                <p>I've been working hard and <em>really need a break.
+                </em></p>
+                <p>I live in <abbr title="Dilli">Delhi</abbr> so I want to visit a Beach.</p>
+                
+                <h3>Places I'd like to visit</h3>
+                <ul>
                 <li>
-                    <a href="#dailySchedule">Daily Schedule</a>
+                    <p>I heard good things about Goa.</p>
+                    <figure>
+                    <img src="img/Goa_resort.jpg" alt="Resort in Goa" title="Abe tu phir aagya" width="1200" height="798" loading="lazy">
+                    <figcaption>This is a Caption for the above image of a Resort in Goa.</figcaption>
+                    </figure>
                 </li>
-                <li>
-                    <a href="#Vacation">Planning a Vacation</a>
+
+                <li><p>I have heard good things about going here:</p></li>
+                <li><address>
+                    Margarita Ville Island Reserve <br>
+                    Goa Port Morelos,Mexico <br>
+                    Colonia Morelos, Mexico 77580
+                    </address>
                 </li>
-            </ul>
-        </nav>
+                </ul>
 
-        <hr>
-        
-        <h2>I'm ready to learn HTML</h2>
-        <p>This is My First Web Page</p>
-        
-        <section id="dailySchedule">
-        <h3>Daily Schedule</h3>
-        <p>Let me tell you how:</p> 
-        <ol> 
-            <li>...I learn more about web dev.
-            <li>...I plan out my schedule.
-            <li>...I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.
-        </ol>
-        </section>
+                <!-- ToDo: Add more places -->
+                
+                <h3>Places I'd like to Avoid:</h3>
+                <dl>
+                <dt><p>Rajasthan</p></dt>
+                <dd><p><strong>No Way!</strong></p></dd>
+                <dt><p>Kashmir</p></dt>
+                <dd><p>Uauhhh!! <strong>Too Cold</strong></p></dd>
+                </dl>
+            </article>
+        </main>
 
         <hr>
 
-        <section id="Vacation">
-        <h2>I am also planning a Vacation</h2>
-        <p>I've been working hard and <em>really need a break.
-        </em></p>
-        <p>I live in <abbr title="Dilli">Delhi</abbr> so I want to visit a Beach.</p>
-        
-        <h3>Places I'd like to visit</h3>
-        <ul>
-        <li><p>I heard good things about Goa.</p></li>
-        <li><p>I have heard good things about going here:</p></li>
-        <li><address>
-            Margarita Ville Island Reserve <br>
-            Goa Port Morelos,Mexico <br>
-            Colonia Morelos, Mexico 77580
-            </address>
-        </li>
-        </ul>
+        <footer>
+            <p>&lt;&lt;&lt; &copy;<a href="about.html"> Prabhat Kumar </a>&gt;&gt;&gt;</p> 
 
-        <!-- ToDo: Add more places -->
-        
-        <h3>Places I'd like to Avoid:</h3>
-        <dl>
-        <dt><p>Rajasthan</p></dt>
-        <dd><p><strong>No Way!</strong></p></dd>
-        <dt><p>Kashmir</p></dt>
-        <dd><p>Uauhhh!! <strong>Too Cold</strong></p></dd>
-        </dl>
-        </section>
-
-        <hr>
-        &lt;&lt;&lt; &copy;<a href="about.html"> Prabhat Kumar </a>&gt;&gt;&gt; 
-
-        <p><a href="#">Back To Top</a></p>
+            <p><a href="#">Back To Top</a></p>
+        </footer>
     </body>
 </html>
