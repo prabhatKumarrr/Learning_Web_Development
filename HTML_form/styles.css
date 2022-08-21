@@ -1,0 +1,45 @@
+body {
+    background-color: #1c1f3b;
+    color: white;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 4%;
+}
+
+main {
+    text-align: left;
+    width: 60%;
+    margin: auto;
+}
+
+hr {
+    border-color: darkblue;
+}
+
+button {
+    padding: 1%;
+    width: 80%;
+    margin: auto 10%;
+    border-color: white;
+    background-color: grey;
+    color: white;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.input {
+    width: 98%;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: #080913;
+    border-color: #080913;
+}
+
+.input-select {
+    width: 100%;
+    margin-top: 1%;
+}
