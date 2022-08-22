@@ -5,6 +5,7 @@
         <meta name="author" content="Prabhat Kumar">
         <meta name="description" content="This is a Registration Form">
         <title>Registration Form</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -12,97 +13,65 @@
             <h1>Registration Form</h1>
         </header>
         <main>
-            <Form>
-                <section class="info">
-                    <p>Please fill out this form with the required information</p>
-                </section>
-                <section class="type">
-                    <p>
-                        <label for="firstName">
-                            Enter Your First Name:
-                            <br>
-                            <input class="input" type="text" name="firstName" id="firstName" placeholder="ex ~ John" required autocomplete="on">
-                        </label>
-                    </p>
-                    <p>
-                        <label for="lastName">
-                            Enter Your Last Name:
-                            <br>
-                            <input class="input" type="text" name="lastName" id="lastName" placeholder="ex ~ Walker" required autocomplete="on">
-                        </label>
-                    </p>
-                    <p>
-                        <label for="email">
-                            Enter Your Email:
-                            <br>
-                            <input class="input" type="email" name="email" id="email" placeholder="ex ~ pappuhalwai@hotmail.com" required autocomplete="on">
-                        </label>
-                    </p>
-                    <p>
-                        <label for="password">
-                            Create a New Password:
-                            <br>
-                            <input class="input" type="password" name="password" id="password" required>
-                        </label>
-                    </p>
-                </section>
-                <hr class="divider">
-                <section class="options">
-                    <p>
-                        <label for="accountType">
-                            <input type="radio" name="accountType" id="personalAccount" value="personalAccount" checked>
-                            Personal Account
-                        </label>
-                    </p>
-                    <p>
-                        <label for="accountType">
-                            <input type="radio" name="accountType" id="businessAccount" value="businessAccount">
-                            Business Account
-                        </label>
-                    </p>
-                    <p>
-                        <label for="terms-conditions">
-                            <input type="checkbox" name="terms-conditions" id="terms-conditions" value="terms-conditions" required>
-                            I accept the <span>terms and conditions</span>
-                        </label>
-                    </p>
-                </section>
-                <hr class="divider">
-                <section class="type">
-                    <p>
-                        <label for="profilePic">
-                            Upload Your Profile picture:
-                            <br>
-                            <input class="input" type="file" name="profilePic" id="profilePic" accept="image/png, image/jpeg, image/jpg" required>
-                        </label>
-                    </p>
-                    <p>
-                        <label for="age">
-                            Input Your Age(Years):
-                            <br>
-                            <input class="input" type="numbers" name="age" id="age" pattern="[0-9]{4}" placeholder="ex ~ 2000" required>
-                        </label>
-                    </p>
-                    <p>
-                        <label for="about-us">
-                            How did you hear about us?<br>
-                            <select class="input-select" name="about-us" id="about-us">
-                                <option value="select_one">(Select one)</option>
-                                <option value="news">FreeCodeCamp News</option>
-                                <option value="ytchannel">FreeCodeCamp Youtube Channel</option>
-                                <option value="forum">FreeCodeCamp Forum</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </label>
-                    </p>
-                    <p>
-                        <label for="bio">
-                            Provide a bio:
-                            <br>
-                            <textarea class="input" name="bio" id="bio" placeholder="I like coding on beach..."></textarea>
-                        </label>
-                    </p>
-                </section>
+            <Form action="https://register-demo.freecodecamp.org">
+                <p>Please fill out this form with the required information</p>
+                <fieldset>
+                    <label>
+                        Enter Your First Name:
+                        <input type="text" name="firstName" id="firstName" placeholder="ex ~ John" required autocomplete="on">
+                    </label>
+                    <label>
+                        Enter Your Last Name:
+                        <input type="text" name="lastName" id="lastName" placeholder="ex ~ Walker" required autocomplete="on">
+                    </label>
+                    <label>
+                        Enter Your Email:
+                        <input type="email" name="email" id="email" placeholder="ex ~ pappuhalwai@hotmail.com" required autocomplete="on">
+                    </label>
+                    <label>
+                        Create a New Password:
+                        <input type="password" name="password" id="password"
+                        pattern="[0-9a-z]{8}" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        <input class="inline" type="radio" name="accountType" id="personalAccount" value="personalAccount" checked> 
+                        Personal Account
+                    </label>
+                    <label>
+                        <input class="inline" type="radio" name="accountType" id="businessAccount" value="businessAccount"> 
+                        Business Account
+                    </label>
+                    <label>
+                        <input class="inline" type="checkbox" name="terms-conditions" id="terms-conditions" value="terms-conditions" required> 
+                        I accept the <span>terms and conditions</span>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        Upload Your Profile picture:
+                        <input class="input" type="file" name="profilePic" id="profilePic" accept="image/png, image/jpeg, image/jpg">
+                    </label>
+                    <label>
+                        Input Your Age(Years):
+                        <input type="number" name="age" placeholder="ex ~ 15" required id="age" min="13" max="120">
+                    </label>
+                    <label>
+                        How did you hear about us?
+                        <select name="about-us" id="about-us">
+                            <option value="select_one">(Select one)</option>
+                            <option value="news">FreeCodeCamp News</option>
+                            <option value="ytchannel">FreeCodeCamp Youtube Channel</option>
+                            <option value="forum">FreeCodeCamp Forum</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                    <label>
+                        Provide a bio:
+                        <textarea class="input" name="bio" id="bio" placeholder="I like coding on beach..."></textarea>
+                    </label>
+                </fieldset>
                 <button type="submit">Submit</button>
             </Form>
         </main>
