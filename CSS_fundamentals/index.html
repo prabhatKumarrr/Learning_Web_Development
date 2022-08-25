@@ -12,71 +12,84 @@
     </head>
     <body>
 
-        <h1 id="title">My Website</h1>
-        
-        <p class="para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.</p>
-
-        <h2 class="subtitle">About Me</h2>
-        
-        <img src="img/img-1.jpg" id="about-us-image">
-        
-        <p class="para-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        
-        <span class="italics">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. 
-        
-        Cillum dolore eu fugiat nulla , pariatur:
-        
-            <ul>
-                <li class="list-item">Excepteur sint occaecat</li>
-                <li class="list-item">cupidatat non proident</li>
-                <li class="list-item">sunt in culpa.</li>
-            </ul>
-        </p>
-        
-        <h2 class="subtitle">Services</h2>
-        <p><a href="https://www.google.com" class="link">Google</a></p>
-        <table border="1">
-            <thead>
-                <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Sit</td>
-                    <td>Amet</td>
-                    <td>Consectetur</td>
-                </tr>
-                <tr>
-                    <td>Adipisicing</td>
-                    <td>Elit</td>
-                    <td>Sed</td>
-                </tr>
+        <header>
+            <h1 id="title">My Website</h1>
+            
+            <p class="para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        </header>
+        <main>
+            <section class="about-me">
+                <h2 class="subtitle">About Me</h2>
                 
-            </tbody>
-        </table>
-        <br>
-        <img src="img/img-2.jpg" alt="image 2">
-        <br><br>
-        <div class="gradient"></div>
+                <figure>
+                    <img src="img/img-1.jpg" id="about-us-img">
+                </figure>
+                
+                <p class="para-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                
+                <span class="italics">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. 
+                
+                Cillum dolore eu fugiat nulla , pariatur:
+                
+                    <ul>
+                        <li class="list-item">Excepteur sint occaecat</li>
+                        <li class="list-item">cupidatat non proident</li>
+                        <li class="list-item">sunt in culpa.</li>
+                    </ul>
+                </p>
+            </section>
 
-        <h2 class="subtitle">Contact Us</h2>
-        
-        <form>
-            <fieldset>
-                <input type="text" placeholder="Full Name" class="form-input">
-                <input type="email" placeholder="Email" class="form-input">
-                <p><textarea rows="5" cols="46" placeholder="Type your Message here...."></textarea></p>
-                <button class="submit-button">Submit</button>
-            </fieldset>
-        </form>  
+            <section class="Services">
+                <img src="img/img-2.jpg" alt="image 2" class="service-img">
+                <h2 class="subtitle">Services</h2>
+                <table border="1" class="table">
+                    <thead>
+                        <tr>
+                            <td>Lorem</td>
+                            <td>Ipsum</td>
+                            <td>Dolor</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sit</td>
+                            <td>Amet</td>
+                            <td>Consectetur</td>
+                        </tr>
+                        <tr>
+                            <td>Adipisicing</td>
+                            <td>Elit</td>
+                            <td>Sed</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <p><a href="https://www.google.com" class="link">Google</a></p>
+            </section>
+
+            <section class="grad-sec">
+                <h2 class="grad" >Gradient</h2>
+                <div class="gradient"></div>
+            </section>
+
+            <section class="contact-us">
+                <h2 class="subtitle">Contact Us</h2>
+                
+                <form>
+                    <fieldset>
+                        <input type="text" placeholder="Full Name" class="form-input">
+                        <input type="email" placeholder="Email" class="form-input">
+                        <p><textarea rows="5" cols="46" placeholder="Type your Message here...."></textarea></p>
+                        <button class="submit-button">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>  
     </body>
 </html>
