@@ -1,0 +1,46 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    margin: 0;
+    background: linear-gradient(130deg, rgb(84, 94, 94), rgb(255,255,255), rgb(84, 94, 94));
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #0a0a23;
+    color: white;
+    padding: 32px;
+    border-bottom: 6px solid #fdb347;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h1 {
+    text-shadow: 8px 4px 10px white;
+}
+
+.gallery {
+    display: flex;
+    width: 80%; 
+    margin: 45px auto 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+
+    box-shadow: 2px 4px 30px black;
+}
