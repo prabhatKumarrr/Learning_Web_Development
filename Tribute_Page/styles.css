@@ -1,0 +1,91 @@
+body {
+    background-color: white;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,rgb(228, 228, 228), white, rgb(228, 228, 228));
+    text-align: center;
+    padding: 40px 0 30px;
+    color: rgb(56, 51, 51);
+    border-radius: 12px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 0px; 
+}
+
+.des-brief,  #tribute-info {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+}
+
+.heading {
+    width: 100%;
+
+}
+
+#img-div {
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+    padding: 30px 5px;
+}
+
+#image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#img-caption {
+    padding: 0 20px;
+}
+
+#tribute-info {
+    text-align: justify;
+    width: 62%;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.sub-head {
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    padding: 40px 0 10px 0;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
+.quote {
+    width: 100%;
+    padding: 20px 0 20px 30px;
+    font-style: oblique;
+}
+
+.extra {
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+.extra a {
+    text-decoration: none;
+}
+
+.extra a:hover {
+    text-shadow: 0 2px rgb(4, 4, 185);
+    color: transparent;
+}
