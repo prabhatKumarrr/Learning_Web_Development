@@ -1,6 +1,6 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 body {
     margin: 0;
@@ -43,4 +43,9 @@ h1 {
     object-fit: cover;
 
     box-shadow: 2px 4px 30px black;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
 }

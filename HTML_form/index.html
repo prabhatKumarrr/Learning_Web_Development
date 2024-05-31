@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Prabhat Kumar">
         <meta name="description" content="This is a Registration Form">
         <title>Registration Form</title>
@@ -43,15 +44,11 @@
                         <input class="inline" type="radio" name="accountType" id="businessAccount" value="businessAccount"> 
                         Business Account
                     </label>
-                    <label>
-                        <input class="inline" type="checkbox" name="terms-conditions" id="terms-conditions" value="terms-conditions" required> 
-                        I accept the <span>terms and conditions</span>
-                    </label>
                 </fieldset>
                 <fieldset>
                     <label>
                         Upload Your Profile picture:
-                        <input class="input" type="file" name="profilePic" id="profilePic" accept="image/png, image/jpeg, image/jpg">
+                        <input class="input pic" type="file" name="profilePic" id="profilePic" accept="image/png, image/jpeg, image/jpg"> 
                     </label>
                     <label>
                         Input Your Age(Years):
@@ -69,9 +66,13 @@
                     </label>
                     <label>
                         Provide a bio:
-                        <textarea class="input" name="bio" id="bio" placeholder="I like coding on beach..."></textarea>
+                        <textarea class="input bio" name="bio" id="bio" placeholder="I like coding on beach..."></textarea>
                     </label>
                 </fieldset>
+                <label>
+                    <input class="inline" type="checkbox" name="terms-conditions" id="terms-conditions" value="terms-conditions" required> 
+                    I accept the <span>terms and conditions</span>
+                </label>
                 <button type="submit">Submit</button>
             </Form>
         </main>

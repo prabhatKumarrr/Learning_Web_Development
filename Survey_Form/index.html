@@ -22,12 +22,13 @@
                     <label id="number-label">Age (optional)<input type="number" id="number" name="number" placeholder="Enter your age" min="13" max="45"></label>
                     <label>Which option best describes your current role? 
                         <select name="dropdown" id="dropdown" required>
-                            <option value="select" disabled>Select current role</option>
-                            <option value="student">Student</option>
-                            <option value="job">Full Time Job</option>
-                            <option value="learner">Full Time Learner</option>
-                            <option value="no-say">Prefer not to say</option>
-                            <option value="other">Other</option>
+                            <optgroup label="Select current role">
+                                <option value="student">Student</option>
+                                <option value="job">Full Time Job</option>
+                                <option value="learner">Full Time Learner</option>
+                                <option value="no-say">Prefer not to say</option>
+                                <option value="other">Other</option>
+                            </optgroup>
                         </select>
                     </label>
                     <fieldset>

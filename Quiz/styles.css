@@ -68,10 +68,10 @@ body {
     }
 
     nav > ul > li:hover {
-        padding: 5px;
+        padding: 10px;
         background-color: #dfdfe2;
         color: #1b1b32;
-        border-radius: 10px;
+        border-radius: 20px;
     }
 
     li > a {

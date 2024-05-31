@@ -1,0 +1,263 @@
+
+
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* margin: 4px; */
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    background: radial-gradient( rgb(221, 213, 213) 45%, white);
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+section {
+    margin: 100px auto;
+}
+
+.btn {
+    margin: 0 auto;
+    width: fit-content;
+    font-weight: bold;
+    padding: 6px;
+    background: aqua;
+    border-radius: 6px;
+    border: none;
+    color: rgb(54, 51, 51);
+}
+
+
+
+/* ----------- HEADER ---------------- */
+
+#header {
+    display: grid;
+    background: rgb(221, 213, 213);
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.logo {
+    /* border: 2px solid red; */
+    width: 40vw;
+    max-width: 280px;
+    align-items: center;
+    margin: 0 auto;
+    /* margin-left: -4px; */
+}
+
+    /* --------- NAVIGATION ----------- */
+
+    .navBar {
+        display: flex;
+        align-items: center;
+    }
+
+    .navBar ul {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-between;
+    }
+
+    .navBar > ul li {
+        margin-left: 1rem;
+        list-style-type: none;
+        /* font-style: italic; */
+        font-weight: bold;
+
+    }
+
+    .navBar > ul li:last-of-type {
+        margin-right: 1rem;
+    }
+
+    .navBar > ul > li a {
+        color: Black;
+        text-decoration: none;
+
+    }
+
+    .navBar > ul > li a:hover {
+        color: transparent;
+        background: white;
+        text-shadow: 0px 2px black;
+        padding: 0px 12px 5px;
+        border-radius: 8px;
+    }
+
+    /* --------- NAVIGATION ----------- */
+
+/* ----------- HEADER ---------------- */
+
+/* -----------Registration Form ------------- */
+
+    #home {
+        display: grid;
+        grid-template-columns: auto;
+        place-content: center;
+    }
+
+    #form {
+        display: grid;
+        grid-template-columns: auto;
+        place-content: center;
+        margin-top: 38px;
+    }
+
+    #email {
+        width: 270px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;;
+    }
+
+    
+
+/* -----------Registration Form ------------- */
+
+/* --------------- Features ------------- */
+
+    .featureContainer {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin-bottom: 35px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        color: orangered;
+    }
+
+    .description h2 {
+        margin-bottom: 10px;
+    }
+
+    .description p {
+        margin-left: 5px;
+        font-size: 0.97rem;
+        letter-spacing: 0.5px;
+    }
+
+/* --------------- Features ------------- */
+
+/* ----------- How it Works? ------------ */
+
+    .videoFrame {
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        width: 50vw;
+        height: 50vh;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;;
+    }
+
+/* ----------- How it Works? ------------ */
+
+/* ---------- Pricing ------------- */
+
+    .pricing {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .product {
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        margin-right: 15px;
+        border-radius: 15px;
+        padding-bottom: 15px
+    }
+
+    .trombone {
+        background-color: rgb(184, 184, 184);
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 15px 15px 0 0;
+        margin-bottom: 10px;
+    }
+
+    .product h2 {
+        margin-top: 2px;
+        margin-bottom: 12px;
+    }
+
+    .product li {
+        margin-bottom: 5px;
+        list-style-type: none;
+    }
+
+    .select {
+        margin-top: 20px;
+    }
+
+/* ---------- Pricing ------------- */
+
+/* ----------- FOOTER  ------------- */
+
+    footer {
+        display: grid;
+        background: rgb(221, 213, 213);
+        grid-template-columns: auto;
+        justify-content: end;
+        height: 68px;
+        /* width: 100%; */
+        padding: 10px;
+    }
+
+    footer ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+    }
+
+    footer > ul li {
+        list-style: none;
+    }
+
+    footer li a {
+        font-weight: bold;
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: black;
+
+        letter-spacing: 0.3px;;
+    }
+
+    span {
+        font-size: small;
+    }
+
+/* ----------- FOOTER  ------------- */
+
+@media (max-width: 550px) {
+    #header {
+        display: none;
+    }
+}

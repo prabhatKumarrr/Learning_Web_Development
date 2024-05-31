@@ -1,12 +1,13 @@
 body{
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
 }
 
 h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgba(0, 0, 255, 0.5);
     text-align: center;
-    text-decoration: underline;
-    text-shadow: 5px 6px 5px rgb(0, 100, 182);
+    /* text-decoration: underline; */
+    /* text-shadow: 5px 6px 5px rgb(0, 100, 182); */
   }
   
   .container {
